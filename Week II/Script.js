@@ -30,17 +30,16 @@ console.log("the value of y will be 'noboy'")
 console.log(y);
 
 //Step 5//
-
+//I recently found out that you can do that with math.round so here you gao Mohamad.
 var z=7.25;
 console.log(z)
-var a = z- 0.25;
+var a= math.round(z)
 console.log(a)
-if (7.25>7){
-    console.log(false)
-}else{
-    
-    console.log (true)}
-    var b=7.25;
+if(a>z){var newThing=a }else{var newThing=z}
+console.log(newThing)
+
+
+
 //Step 6//
 
 let Arrays=[]
@@ -53,8 +52,8 @@ console.log(favAnmis)
  //Step 7//
  
  let myString = 'THis is a test';
- console.log(myString)
- myString.length
+ console.log(myString);
+
  console.log(myString.length)
 
 //Step 8 //
@@ -63,14 +62,11 @@ let steve="The hair";
 let john= 2;
 let t= "yes";
 let q="2";
-console.log('The value of my variable steve is' + steve)
-console.log('the value of my variable john is' + john)
-console.log('The value of my variable t is ' + t)
-console.log('The value of my variable q is ' + q)
-console.log('the type of my variabel steve is string')
-console.log('the type of my variable john is number')
-console.log('the type of my variable t is boolean' )
-console.log('the type of my variable q is  string')
+alert('The value of my variable steve is' + steve)
+alert('the value of my variable john is' + john)
+alert('The value of my variable t is ' + t)
+alert('The value of my variable q is ' + q)
+
 console.log(typeof steve);
 console.log(typeof john);
 console.log(typeof t);
