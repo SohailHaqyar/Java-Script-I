@@ -1,117 +1,176 @@
-// // // //Step 1 //
+//The Homework for Week Three//
+//Number I
+let myString = 'hello,this,is,a,difficult,to,read,sentence';
+console.log(myString);
+console.log(myString.length);
+myString = myString.replace(/,/g, ' ');
+console.log(myString);
+//Done
 
-// // // let myString = "hello,this,is,a,difficult,to,read,sentence";
-// // // console.log(myString.length)
-// // // let mynewString=myString.replace(/,/g,' ');
-// // // console.log(mynewString)
+//Number II
+let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+favoriteAnimals.push('turtle');
+console.log(favoriteAnimals);
+favoriteAnimals.splice(1, 0, 'meerkat');
+console.log('the value of the new array will be all the animals mentioned');
+//what the fuck is the point of this;god fucking damn it
+console.log(favoriteAnimals);
+console.log('The array has a length of ' + favoriteAnimals.length);
+favoriteAnimals.splice(3, 1);
+console.log(favoriteAnimals);
+//using indexof
+console.log('the index of meerkat is ' + favoriteAnimals.indexOf('meerkat'));
+//#done again//
 
-// // // //Step 2 //
+//More Javascript : more like harder Javascript;
 
-// // // let favoriteAnimals = ['blowfish', 'capricorn' , 'giraffe'];
-// // // favoriteAnimals.push('turtle');
-// // // console.log(favoriteAnimals)
-// // // favoriteAnimals[1]=('meerkat')
-// // // favoriteAnimals[2]=('capricorn')
-// // // favoriteAnimals[3]=('turtle')
+//Question Number I;
 
-// // // console.log('the value of the new array is meerkat apparently')
-// // // console.log(favoriteAnimals)
-// // // console.log('The Item you are looking for is in the index of '+ favoriteAnimals.indexOf('meerkat'))
+function Addition(a, b, c) {
+	return a + b + c;
+}
+const theResult = Addition(1, 4, 64);
+console.log(theResult);
+//Done//
 
-// // // //More Java-Script
+//Question Number II;
 
-// // // //1//
+function colorCar(color) {
+	return 'A ' + color + ' Car';
+}
+const test = colorCar('blue');
+console.log(test);
 
-// // // function  Addition(a,b,c){
-// // //     sum=a+b+c;
+//Done//
 
-// // // }
-// // // Addition(2,3,2);
-// // // console.log(sum)
-// // // //2//
-  
-// // // function Colorcar(color){
-// // //     console.log('A '+ color ,' Car')
+//Question Number III;
 
-// // // }
-// // // Colorcar('green');
-// // // //3//
-// // // const meObject={
-// // //     Name: 'CoD',
-// // //     LastName: 'Conovers',
-// // //     Age : 17,
-// // //     Look : 'ayaayay',
-// // // }
-// // // function Counter(meObject){
-// // // console.log(meObject)
-// // // } 
-// // // Counter(meObject)
-// // // //such a tease this question.//
-// // // //4//
+const meObject = {
+	name: 'Sohail',
+	age: 'Decline to state',
+	looks: 'hehehehe handsome as fuck '
+};
+function cons(meObject) {
+	console.log(meObject);
+}
+cons(meObject);
 
+//Done//
 
-// // // function vehicleType(color, car){
-// // //   if (car === 1){
-// // //     console.log('A big ass '+ color +' Car');
-// // //   }
-// // //   else{
-// // //     console.log('A clunkey butt' +  color +' bike');
-// // //   } 
-// // // }
-// // // vehicleType("red", 1);
+//Question Number IV;
 
-// // // //5//
-// // // (3 === 3)? console.log('yes'):console.log('no');
+function vehicleType(color, type) {
+	if (type === 1) {
+		return 'A ' + color + ' car';
+	} else {
+		return 'A ' + color + ' motorbike';
+	}
+}
+const func = vehicleType('greenish', 2);
+console.log(func);
+//Done //
 
-// // // //6//
-// // // function vehicle(color,car,age){
-// // //     if(age<=5){
-// // //         console.log('A big '+ color+"used car");
-// // //         else()
-// // //     }
-// // // }
+//Question Number V;
+console.log(3 === 3 ? 'yes' : 'no');
 
+//Done
 
-// // // function go(name,age){
-// // //     alert(name);
-// // //     alert(age);
+//Question Number VI;
 
-// // // }
+function getVehicleName(type) {
+	return type === 1 ? 'car' : 'vehicle';
+}
+function ageName(age) {
+	if (age > 5) {
+		return 'used';
+	} else {
+		return 'new';
+	}
+}
+function vehicle(color, myArray, age) {
+	return 'a ' + ageName(age) + ' ' + color + ' ' + getVehicleName(type);
+}
+console.log(vehicleType('red', 1, 6));
 
-
-
-// // // function add(first,second) {
-// // // return first+second;
-// // // }
-// // // var sum= add(1,2)
-// // // alert(sum);
-
-// // // function go(name,age) {
-// // //     if (age<20){
-// // //         return name+'!'
-// // //     }else {return name;}
-// // // }
-
-// // // alert(go('sohail',17))
-
-// //  function greet(){
-// //      console.log('hello bitch')
-// //  }
-// //  greet()
-// //  const speak = function(name,time){
-// // console.log('good '+time + name)
-// //  };
-// //  speak('nigga','morning ');
+//Done//
 
 
-// const damn = function(radius){
-//     return 3.14 *radius**2;
-   
+//Question Number VII;
+
+const myArray=['motorbike','caravan','bike']
+//You use .splice to get rid of an element//
+//Done//
+
+//Question VIII;
+//You use .splice to get rid of an element//
+//Done I think//
+
+
+//Question VIV;
+// for (){
+
 // }
-// damn(2);
-// const area= damn(5);
-// console.log(area);
- 
+
+//done
+//Question X//
+//done
+
+
+//Question XII;
+
+const myEmptyObject= {
+
+}
+//Done//
+
+//Question XIII,XIV;
+const myTeachers= {
+                    Zohir: 'Html,Css,Javascript' ,
+                    AbRahman:'Html,css',
+                    Mohamad:'Javascript',
+                    Johneyboy: 'Javascript',
+
+                    }               
+
+//Done//
+//Question XV//
+
+let x = [1,2,3];
+let y = [1,2,3];
+let z = y;
+
+(x==y)? console.log(true):console.log(false);
+(x===y) ? console.log(true):console.log(false);
+//Done//
+
+//Question XVI//
+let o1 = { foo: 'bar' };
+let o2 = { foo: 'bar' };
+let o3 = o2;
+
+
+o2 = { famas: 'holy fuckkkk' };
+o1 = { ak47: 'Damito cosita' };
+
+console.log(o1);
+
+console.log(o2);
+
+console.log(o3);
+
+alert('The o1 and o2 changes dont matter apparently ')
+
+
+//Done//
+
+//Question XVII
+let bar = 42;
+typeof typeof bar;
+
+console.log(typeof typeof bar)
+//it returns foo bar//
+//maybe because when you look for its type twice it gives you a foo which probably is another type of data.//
+//done
 
 
 
@@ -124,4 +183,7 @@
 
 
 
-function
+
+
+
+
