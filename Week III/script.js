@@ -97,7 +97,7 @@ console.log(vehicleType('red', 1, 6));
 
 //Question Number VII;
 
-const myArray=['motorbike','caravan','bike']
+const vehicles = [ "motorbike", "caravan", "bike"];
 //You use .splice to get rid of an element//
 //Done//
 
@@ -107,13 +107,49 @@ const myArray=['motorbike','caravan','bike']
 
 
 //Question VIV;
-// for (){
+/*
+const myArray=['car','bike','motor','truck'];
+function getVehicleName(index){
+    return myArray[index]
+}
+console.log(getVehicleName(0));*/
+//An alternative way of doing this//
+const vehicles = [ "motorbike", "caravan", "bike"];//the Array
+function getVehicleByIndex(index) {
+    return vehicles[index - 1];
+}
+function getVehicleCondition(age) {
+    if(age>5) {
+        return 'used'
+    } else {
+        return 'new';
+    }
+}
+function vehicleType(color, typeIndex, age) {
+    return 'a ' + getVehicleCondition(age) + ' ' + color + ' ' + getVehicleByIndex(typeIndex);
+}
+//Done
+//Question Number 10 fucking difficult omg//
 
-// }
+function advertisment(vehicles) {
+    let message = "Amazing Joe's Garage, we service";
+    if (vehicles.length === 1) {
+        return message + ' ' + vehicles[0];
+    }
+    for (let i = 0; i < vehicles.length; i++) {
+        const vehicle = vehicles[i];
+        if (i === vehicles.length - 1) {
+            const messageWithoutTrailingComma = message.substr(0, message.length - 1);
+            message = `${messageWithoutTrailingComma} and ${vehicle}s.`;
+        } else {
+            message += ` ${vehicle}s,`;
+        }
+    }
+    return message;
+}
+console.log(vehicleType("red", 1, 6));
+console.log(advertisment(vehicles));
 
-//done
-//Question X//
-//done
 
 
 //Question XII;
